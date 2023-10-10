@@ -1,7 +1,7 @@
-import styles from './Button.module.css'
+import styles from './EnterLink.module.css'
 import { Link } from 'react-router-dom'
 
-const Button = ({ text }) => {
+const EnterLink = ({ text }) => {
 	return (
 		<Link to='/main' className={styles.button} data-text={text}>
 			{text}
@@ -9,4 +9,4 @@ const Button = ({ text }) => {
 	)
 }
 
-export default Button
+export default EnterLink

@@ -26,7 +26,6 @@
 	}
 }
 
-
 .button:after, .button:before {
 	content: 'CLICK TO ENTER';
 	position: absolute;
