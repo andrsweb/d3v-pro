@@ -1,17 +1,50 @@
 import { useState, useEffect } from 'react';
 import Enter from './Enter/Enter'
+import NotFound from './NotFound/NotFound'
 import Loader from './Loader/Loader';
 import AnimatedCursor from "react-animated-cursor"
+import {
+	createBrowserRouter,
+	RouterProvider,
+	Link
+} from "react-router-dom";
 
 function App() {
-	const [loading, setLoading] = useState(false)
+	const router = createBrowserRouter([
+		{
+			path: "/",
+			element: (
+				<Enter />
+			),
+		},
+		{
+			path: "/main",
+			element: (
+				<>
+					<h1>Hello from main</h1>
+					<Link to="/">Home</Link>
+				</>
+			),
+		},
+		{
+			path: "/*",
+			element: (
+				<>
+					<NotFound />
+				</>
+			),
+		},
+	]);
+
+	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
 		}, 2000);
-	}, [])
+	}, []);
+
 
 	return (
 		<div>
@@ -34,11 +67,10 @@ function App() {
 				<Loader />
 			) : (
 				<>
-					<Enter />
+					<RouterProvider router={router} />
 				</>
 			)}
 		</div>
 	)
 }
-
 export default App

@@ -1,0 +1,13 @@
+.notFoundWrapper {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.notFoundText {
+	font-family: 'Montserrat';
+	font-size: 50px;
+	color: #ffffff;
+}
