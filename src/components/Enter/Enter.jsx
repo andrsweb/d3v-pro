@@ -15,8 +15,8 @@ const Enter = () => {
 			<section className={styles.enter} id="enter">
 				<div className={styles.enterWrapper}>
 					<div className={styles.enterTitle}>
-						<span className={styles.h1Part}>Welcome to</span>
-						<h1 className={styles.h1} data-text="d3v.pro">d3v.pro</h1>
+						<span className={styles.logoPart}>Welcome to</span>
+						<div className={styles.logo} data-text="d3v.pro">d3v.pro</div>
 					</div>
 					<EnterLink text="Click to enter" />
 				</div>

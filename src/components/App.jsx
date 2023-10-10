@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import Enter from './Enter/Enter'
+import About from './About/About';
+import Header from './Header/Header';
 import NotFound from './NotFound/NotFound'
 import Loader from './Loader/Loader';
 import AnimatedCursor from "react-animated-cursor"
 import {
 	createBrowserRouter,
-	RouterProvider,
-	Link
+	RouterProvider
 } from "react-router-dom";
 
 function App() {
@@ -21,8 +22,16 @@ function App() {
 			path: "/main",
 			element: (
 				<>
-					<h1>Hello from main</h1>
-					<Link to="/">Home</Link>
+					<Header />
+				</>
+			),
+		},
+		{
+			path: "/about",
+			element: (
+				<>
+					<Header />
+					<About />
 				</>
 			),
 		},
@@ -44,7 +53,6 @@ function App() {
 			setLoading(false);
 		}, 2000);
 	}, []);
-
 
 	return (
 		<div>
