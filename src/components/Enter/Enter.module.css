@@ -8,24 +8,6 @@
 	position: relative;
 }
 
-.enterActive {
-	animation: remove 2s forwards ease;
-}
-
-@keyframes remove {
-	0% {
-		scale: 1;
-	}
-
-	99% {
-		scale: 0;
-	}
-
-	100% {
-		display: none;
-	}
-}
-
 .canvas {
 	position: absolute;
 	left: 0;

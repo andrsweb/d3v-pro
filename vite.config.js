@@ -37,7 +37,7 @@ export default defineConfig({
 				entryFileNames: 'assets/js/[name]-[hash].js',
 
 				assetFileNames: ({ name }) => {
-					if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')) {
+					if (/\.(gif|jpe?g|png|svg|webp)$/.test(name ?? '')) {
 						return 'assets/img/[name]-[hash][extname]';
 					}
 
