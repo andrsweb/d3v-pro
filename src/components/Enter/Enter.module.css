@@ -1,0 +1,155 @@
+.enter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: #111;
+	position: relative;
+}
+
+.enterActive {
+	animation: remove 2s forwards ease;
+}
+
+@keyframes remove {
+	0% {
+		scale: 1;
+	}
+
+	99% {
+		scale: 0;
+	}
+
+	100% {
+		display: none;
+	}
+}
+
+.canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.enterWrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.enterTitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: show 3s forwards ease;
+	text-align: center;
+}
+
+@media all and (min-width: 768px) {
+	.enterTitle {
+		flex-direction: row;
+		text-align: center;
+	}
+}
+
+.h1 {
+	font-family: 'Tekkers 3 FV';
+	font-size: 45px;
+	color: #ffffff;
+	animation: glitch 1s linear infinite;
+	position: relative;
+}
+
+@media all and (min-width: 768px) {
+	.h1 {
+		font-size: 60px;
+	}
+}
+
+.h1:before,
+.h1:after {
+	display: block;
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+}
+
+.h1:before {
+	animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+	color: #00FFFF;
+	z-index: -1;
+}
+
+.h1:after {
+	animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+	color: #FF00FF;
+	z-index: -2;
+}
+
+.h1Part {
+	font-family: 'Montserrat';
+	color: #ffffff;
+	font-size: 30px;
+	margin-right: 20px;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+@media all and (min-width: 768px) {
+	.h1Part {
+		font-size: 50px;
+	}
+}
+
+@keyframes glitch-it {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	to {
+		transform: translate(0);
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		margin-bottom: 0;
+	}
+
+	100% {
+		opacity: 1;
+		margin-bottom: 10vw;
+	}
+}
+
+.enter .clicked {
+	display: none;
+}
