@@ -1,84 +1,38 @@
 import { useState, useEffect } from 'react';
-import Enter from './Enter/Enter'
-import About from './About/About';
-import Header from './Header/Header';
-import NotFound from './NotFound/NotFound'
+import Canvas from './Canvas/Canvas';
 import Loader from './Loader/Loader';
-import AnimatedCursor from "react-animated-cursor"
-import {
-	createBrowserRouter,
-	RouterProvider
-} from "react-router-dom";
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import { initCanvas } from '../assets/js/canvas';
+
 
 function App() {
-	const router = createBrowserRouter([
-		{
-			path: "/",
-			element: (
-				<Enter />
-			),
-		},
-		{
-			path: "/main",
-			element: (
-				<>
-					<Header />
-				</>
-			),
-		},
-		{
-			path: "/about",
-			element: (
-				<>
-					<Header />
-					<About />
-				</>
-			),
-		},
-		{
-			path: "/*",
-			element: (
-				<>
-					<NotFound />
-				</>
-			),
-		},
-	]);
-
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
-		}, 2000);
+			initCanvas()
+		}, 10);
 	}, []);
 
 	return (
-		<div>
-			<AnimatedCursor
-				innerSize={10}
-				outerSize={35}
-				innerScale={3}
-				outerScale={1}
-				outerAlpha={0}
-				hasBlendMode={true}
-				innerStyle={{
-					backgroundColor: '#ffea19'
-				}}
-				outerStyle={{
-					border: '3px solid #ffea19'
-				}}
-			/>
-
+		<>
+			<Canvas />
 			{loading ? (
 				<Loader />
 			) : (
 				<>
-					<RouterProvider router={router} />
+					<div className='app'>
+						<div className="wrapper">
+							<Header />
+							<Footer />
+						</div>
+					</div>
 				</>
 			)}
-		</div>
+		</>
 	)
 }
 export default App

@@ -1,16 +1,33 @@
 .headerLogo {
 	height: 100%;
-	font-family: 'Tekkers 3 FV';
-	font-size: 45px;
-	color: #ffffff;
-	animation: glitch 1s linear infinite;
+	font-family: 'Cellblock NBP';
+	font-weight: 700;
+	text-shadow: 2px 2px 2px var(--white);
+	font-size: 30px;
+	color: var(--white);
 	position: relative;
 	text-decoration: none;
+	text-transform: uppercase;
+	transition: color ease 0.3s;
+}
+
+.headerLogo:hover {
+	animation: glitch 1s linear infinite;
+	color: var(--yellow);
+}
+
+.headerLogo:hover::before {
+	animation: glitch 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both infinite;
+	color: var(--yellow);
+}
+
+.headerLogo:hover:after {
+	animation: glitch 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) reverse both infinite;
 }
 
 @media all and (min-width: 768px) {
 	.headerLogo {
-		font-size: 60px;
+		font-size: 75px;
 	}
 }
 
@@ -25,13 +42,11 @@
 }
 
 .headerLogo:before {
-	animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 	color: #00FFFF;
 	z-index: -1;
 }
 
 .headerLogo:after {
-	animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
 	color: #FF00FF;
 	z-index: -2;
 }

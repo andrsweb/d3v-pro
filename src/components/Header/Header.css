@@ -1,0 +1,70 @@
+@import '../../assets/css/vars';
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 20px 0;
+}
+
+.headerWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.headerList {
+	display: flex;
+}
+
+.headerList li {
+	margin-right: 20px;
+}
+
+.headerList li:last-child {
+	margin-right: 0;
+}
+
+.headerLink {
+	font-family: var(--ff-add);
+	color: var(--white);
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+	transition: color ease 0.3s,
+			scale ease 0.3s;
+}
+
+.headerLink:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    transition: width 0.5s; 
+}
+
+.headerLink:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: var(--yellow); 
+    transition: width 0.5s;
+}
+
+.active {
+	font-weight: 700;
+	scale: 1.1;
+}
+
+.active:hover::after {
+	display: none;
+}

@@ -1,5 +1,5 @@
 .notFoundWrapper {
-	min-width: 100vw;
+	width: 100%;
 	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
@@ -15,16 +15,16 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	font-family: 'Montserrat';
-	color: #b8b8b8;
+	font-family: var(--ff);
+	color: var(--gray);
 	z-index: -1;
 	opacity: 0.3;
 }
 
 .notFoundText {
-	font-family: 'Montserrat';
+	font-family: var(--ff-add);
 	font-size: 25px;
-	color: #ffffff;
+	color: var(--white);
 	text-align: center;
 	margin-top: 5vw;
 	text-transform: uppercase;
@@ -37,12 +37,12 @@
 }
 
 .link {
-	font-family: 'Montserrat';
-	color: #ffffff;
+	font-family: var(--ff);
+	color: var(--white);
 	text-decoration: none;
 	margin-top: 5vw;
-	background-color: #ffffff;
-	color: #111111;
+	background-color: var(--white);
+	color: var(--black);
 	padding: 15px 30px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -85,15 +85,15 @@
 }
 
 .catDialogue {
-	font-family: 'Montserrat';
+	font-family: var(--ff);
 	font-size: 11px;
 	text-align: center;
 	width: 250px;
 	height: 120px;
-	color: #111111;
-	background-color: #111111;
-	color: #ffffff;
-	border: 3px solid #ffffff;
+	color: var(--black);
+	background-color: var(--black);
+	color: var(--white);
+	border: 3px solid var(--white);
 	border-radius: 45%;
 	padding: 15px;
 	position: relative;
@@ -132,8 +132,8 @@
 	bottom: -50px;
 	width: 30px;
 	height: 30px;
-	background-color: #111111;
-	border: 3px solid #ffffff;
+	background-color: var(--black);
+	border: 3px solid var(--white);
 	border-radius: 50%;
 	animation: fade1 4s forwards ease;
 }
@@ -146,8 +146,8 @@
 	bottom: -80px;
 	width: 15px;
 	height: 15px;
-	background-color: #111111;
-	border: 3px solid #ffffff;
+	background-color: var(--black);
+	border: 3px solid var(--white);
 	border-radius: 50%;
 	animation: fade2 4s forwards ease;
 	animation-delay: 0.1s;
@@ -410,5 +410,4 @@
 	100% {
 		opacity: 1;
 	}
-
 }

@@ -15,12 +15,12 @@ const NotFound = () => {
 	})
 
 	return (
-		<>
+		<div className="wrapper">
 			<div className={styles.notFoundWrapper}>
 				<div className={styles.notFoundText}>
 					This page does not exist
 				</div>
-				<Link className={styles.link} to="/main">
+				<Link className={styles.link} to="/">
 					Go to main page
 				</Link>
 				<div className={styles.catWrapper}>
@@ -36,7 +36,7 @@ const NotFound = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 

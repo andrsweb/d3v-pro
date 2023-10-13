@@ -1,41 +1,65 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat-Bold.eot');
-    src: url('../../assets/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/Montserrat-Bold.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat-Bold.woff') format('woff'),
-        url('../../assets/fonts/Montserrat-Bold.ttf') format('truetype'),
-        url('../../assets/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-family: 'Cellblock NBP';
+    src: url('../../assets/fonts/CellblockNBP.eot');
+    src: url('../../assets/fonts/CellblockNBP.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/CellblockNBP.woff2') format('woff2'),
+        url('../../assets/fonts/CellblockNBP.woff') format('woff'),
+        url('../../assets/fonts/Cellblock NBP.ttf') format('truetype'),
+        url('../../assets/fonts/CellblockNBP.svg#Tekkers3FV-Italic') format('svg');
+    font-weight: normal;
+    font-style: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yeysk';
+    src: url('../../assets/fonts/Yeysk-Regular.eot');
+    src: url('../../assets/fonts/Yeysk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Yeysk-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Yeysk-Regular.woff') format('woff'),
+        url('../../assets/fonts/Yeysk-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/Yeysk-Regular.svg#Yeysk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
-
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat-Regular.eot');
-    src: url('../../assets/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat-Regular.woff') format('woff'),
-        url('../../assets/fonts/Montserrat-Regular.ttf') format('truetype'),
-        url('../../assets/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
-    font-weight: normal;
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Thin.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 
-@font-face {
-    font-family: 'Tekkers 3 FV';
-    src: url('../../assets/fonts/Tekkers3FV-Italic.eot');
-    src: url('../../assets/fonts/Tekkers3FV-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/Tekkers3FV-Italic.woff2') format('woff2'),
-        url('../../assets/fonts/Tekkers3FV-Italic.woff') format('woff'),
-        url('../../assets/fonts/Tekkers3FV-Italic.ttf') format('truetype'),
-        url('../../assets/fonts/Tekkers3FV-Italic.svg#Tekkers3FV-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
+
 
