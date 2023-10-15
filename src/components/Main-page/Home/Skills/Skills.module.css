@@ -61,31 +61,31 @@
 	color: var(--white);
 }
 
-.percent .num h3 {
-	color: #777;
+.num h3 {
+	color: var(--gray);
 	font-weight: 700;
 	font-size: 40px;
 	transition: 0.5s;
 }
 
-.card:hover .percent .num h3 {
-	color: #fff;
+.card:hover .num h3 {
+	color: var(--white);
 	font-size: 60px;
 }
 
 .percent .num h3 span {
-	color: #777;
+	color: var(--gray);
 	font-size: 24px;
 	transition: 0.5s;
 }
 
 .card:hover .percent .num h2 span {
-	color: #fff;
+	color: var(--white);
 }
 
 .text {
 	position: relative;
-	color: #777;
+	color: var(--gray);
 	margin-top: 20px;
 	font-weight: 700;
 	font-size: 18px;
@@ -95,7 +95,7 @@
 }
 
 .card:hover .text {
-	color: #fff;
+	color: var(--white);
 }
 
 svg {
