@@ -6,6 +6,7 @@
 	top: 0;
 	width: 100%;
 	padding: 20px 0;
+	z-index: 100;
 }
 
 .headerWrapper {
@@ -29,6 +30,7 @@
 .headerLink {
 	font-family: var(--ff-add);
 	color: var(--white);
+	font-weight: 700;
 	text-transform: uppercase;
 	position: relative;
 	cursor: pointer;

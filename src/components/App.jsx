@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Canvas from './Canvas/Canvas';
+import { Outlet } from 'react-router-dom';
 import Loader from './Loader/Loader';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
@@ -27,6 +28,7 @@ function App() {
 					<div className='app'>
 						<div className="wrapper">
 							<Header />
+							<Outlet />
 							<Footer />
 						</div>
 					</div>

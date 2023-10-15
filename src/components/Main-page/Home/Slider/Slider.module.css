@@ -1,0 +1,28 @@
+.mainSlider {
+	padding: 20px 0;
+	width: 100vw;
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	margin-left: calc(50% - 50vw);
+	transform: rotateZ(-1deg);
+}
+
+.sliderLink {
+	font-family: var(--ff-title);
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--white);
+	transition: color ease 0.3s;
+	text-transform: uppercase;
+}
+
+.sliderLink:hover {
+	color: var(--yellow);
+}
+
+.sliderWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}

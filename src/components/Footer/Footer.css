@@ -4,4 +4,23 @@
 
 .footerWrapper {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footerLink {
+	color: var(--white);
+	font-family: var(--ff-add);
+	font-weight: 700;
+	font-size: 20px;
+	margin-right: 20px;
+	transition: scale ease 0.3s;
+}
+
+.footerLink:last-child {
+	margin-right: 0;
+}
+
+.footerLink:hover {
+	scale: 1.1;
 }

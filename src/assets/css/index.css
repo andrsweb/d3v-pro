@@ -35,6 +35,10 @@
 	}
 }
 
+.wrapper {
+	margin-top: 112px;
+}
+
 /*  */
 
 * {
@@ -61,7 +65,14 @@ body {
 	background-color: var(--black);
 }
 
-span::selection, div::selection, p::selection, a::selection, button::selection,h1::selection,h2::selection,h3::selection {
+span::selection,
+div::selection,
+p::selection,
+a::selection,
+button::selection,
+h1::selection,
+h2::selection,
+h3::selection {
 	background-color: var(--white);
 	color: var(--black);
 }
@@ -131,4 +142,19 @@ fieldset {
 
 .footer {
 	margin-top: auto
+}
+
+.swiper-wrapper {
+	transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+}
+
+.swiper-slide img {
+	margin-right: 15px;
 }
