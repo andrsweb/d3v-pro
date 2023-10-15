@@ -1,16 +1,9 @@
 import styles from './Blog.module.css'
 
-const About = () => {
+const Blog = () => {
 	return (
-		<>
-			<div>Pidor</div>
-			<div>Pidor</div>
-			<div>Pidor</div>
-			<div>Pidor</div>
-			<div>Pidor</div>
-		</>
-
+		<div className='dev'>Blog is in development</div>
 	)
 }
 
-export default About
+export default Blog

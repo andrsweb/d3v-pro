@@ -15,7 +15,7 @@ const NotFound = () => {
 	})
 
 	return (
-		<div className="wrapper">
+		<div className="wrapper errorWrapper">
 			<div className={styles.notFoundWrapper}>
 				<div className={styles.notFoundText}>
 					This page does not exist

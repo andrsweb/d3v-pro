@@ -35,10 +35,6 @@
 	}
 }
 
-.wrapper {
-	margin-top: 112px;
-}
-
 /*  */
 
 * {
@@ -95,6 +91,11 @@ ul {
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
+	margin-top: 112px;
+}
+
+.wrapper.errorWrapper {
+	margin-top: 0;
 }
 
 #root {
@@ -157,4 +158,11 @@ fieldset {
 
 .swiper-slide img {
 	margin-right: 15px;
+}
+
+.dev {
+	font-family: var(--ff-add);
+	color: var(--white);
+	font-size: 30px;
+	text-align: center;
 }

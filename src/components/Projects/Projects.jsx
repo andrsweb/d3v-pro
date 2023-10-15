@@ -1,9 +1,9 @@
 import styles from './Projects.module.css'
 
-const About = () => {
+const Projects = () => {
 	return (
-		<div className={styles.text}>Welcome to blog page</div>
+		<div className='dev'>Projects is in development</div>
 	)
 }
 
-export default About
+export default Projects

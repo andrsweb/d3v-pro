@@ -9,6 +9,8 @@ import App from './components/App.jsx'
 import About from './components/About/About.jsx';
 import Blog from './components/Blog/Blog'
 import Projects from './components/Projects/Projects'
+import News from './components/News/News.jsx';
+import Contacts from './components/Contacts/Contacts.jsx';
 import NotFound from './components/NotFound/NotFound.jsx';
 import './assets/css/index.css'
 import './assets/css/typography.css'
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
 			{
 				path: "/projects",
 				element: <Projects />
+			},
+			{
+				path: "/news",
+				element: <News />
+			},
+			{
+				path: "/contacts",
+				element: <Contacts />
 			}
 		]
 	}
