@@ -1,0 +1,67 @@
+.priority {
+	padding: 50px 0;
+}
+
+.priorityWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.priorityInner {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.priorityBlocks {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px
+}
+
+.priorityBlock {
+	width: calc(100% / 2);
+	padding: 0 20px;
+	color: var(--white);
+	margin-bottom: 50px;
+}
+
+.priorityBlock:nth-child(n + 5) {
+	margin-bottom: 0;
+}
+
+.priorityBlock:hover .priorityBlockInner {
+	box-shadow: inset 0 0 10px #000;
+	scale: 1.1;
+}
+
+.priorityBlockInner {
+	font-family: var(--ff-add);
+	box-shadow: inset 0 0 50px #000;
+	background-color: #222222;
+	text-align: center;
+	padding: 30px;
+	transition: box-shadow ease 0.3s,
+			scale ease 0.3s;
+}
+
+.priorityList {
+	width: calc(50% - 50px);
+	margin-left: 50px;
+}
+
+.priorityItem {
+	font-family: var(--ff);
+	font-weight: 300;
+	color: var(--white);
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.priorityTitle {
+	margin-bottom: 3vw;
+}

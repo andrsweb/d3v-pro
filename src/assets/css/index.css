@@ -160,6 +160,16 @@ fieldset {
 	margin-right: 15px;
 }
 
+.devWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.devWrapper img {
+	margin-top: 10vw;
+}
+
 .dev {
 	font-family: var(--ff-add);
 	color: var(--white);

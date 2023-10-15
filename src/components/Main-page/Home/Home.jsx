@@ -3,6 +3,7 @@ import Hero from './Hero/Hero'
 import Slider from './Slider/Slider'
 import Info from './Info/Info'
 import Skills from './Skills/Skills'
+import Priority from './Priority/Priority'
 
 const Home = () => {
 	return (
@@ -11,6 +12,7 @@ const Home = () => {
 			<Slider />
 			<Info />
 			<Skills />
+			<Priority />
 		</>
 	)
 }

@@ -6,7 +6,7 @@ const Info = () => {
 			<div className="container">
 				<div className={styles.infoWrapper}>
 					<h2 className={styles.infoTitle}>
-						About my skills
+						Hard skills
 					</h2>
 					<div className={styles.infoInner}>
 						<p className={styles.infoText}>
