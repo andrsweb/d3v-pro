@@ -11,10 +11,10 @@ const Hero = () => {
 				<div className={styles.heroWrapper}>
 					<div className={styles.heroHeading}>
 						<h1 className='h1'>
-							H1 title
+							Andrey Polovnov
 						</h1>
 						<p className={styles.heroSubtitle}>
-							This is subtitle
+							Front-end developer
 						</p>
 						<div className={styles.heroImg}>
 							<Img src={Me} srcSet={MeWebp} />

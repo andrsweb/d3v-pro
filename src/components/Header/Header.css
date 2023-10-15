@@ -15,6 +15,12 @@
 	justify-content: space-between;
 }
 
+.headerNav {
+	transition: background-color ease 0.33s,
+				border-radius ease 0.33s,
+				padding ease 0.33s;
+}
+
 .headerList {
 	display: flex;
 }
@@ -70,4 +76,11 @@
 
 .active:hover::after {
 	display: none;
+}
+
+.header.scrolled .headerNav {
+	background-color: rgba(17, 17, 17, 0.185);
+	border-radius: 20px;
+	padding: 20px;
+	backdrop-filter: blur(100px) saturate(1.7);
 }

@@ -1,7 +1,9 @@
 import { NavLink } from 'react-router-dom'
 import Logo from '../UX/Logo/Logo'
+import { headerScroll } from '../../assets/js/header'
 
 const Header = () => {
+	headerScroll()
 	return (
 		<header className='header'>
 			<div className='container'>
